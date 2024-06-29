@@ -1,0 +1,22 @@
+{
+   "name": "Crypto Master",
+   "short_name": "Crypto Master",
+   "description": "A simple App",
+   "display": "standalone",
+   "background_color": "#f1f1f1",
+   "theme_color": "#000000",
+   "orientation": "portrait",
+   "icons": [
+      {
+         "src": "image/logo192.png",
+         "sizes": "192x192",
+         "type": "image/png"
+},
+      {
+         "src": "image/logo144.png",
+         "sizes": "144x144",
+         "type": "image/png"
+      }
+],
+   "start_url": "index.html"
+}

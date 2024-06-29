@@ -1,0 +1,634 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root{
+  --main: linear-gradient(30deg, #cbcdcc, #fefefe, #fefefe);
+  --use: #eef0ed;
+  --use2: #edf0ee;
+  --use3: grey;
+  --weight:100%;
+  --red: red;
+  --green: green;
+  --font: 2rem;
+  --fontbig:2rem;
+}
+
+body{
+   font-size: 15px;
+   width: 100%;
+   height: 95vh;
+   display: flex;
+   flex-direction: column;
+   overflow: none;
+   position: relative;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.color1{
+   background-image: var(--main);
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.guild{
+   padding: 5% 5% 13% 5%;
+}
+
+.navbar{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 2%;
+}
+
+.btnhoder{
+   display: flex;
+   width:30%;
+   position: relative;
+}
+
+.btn1{
+   width: 2.5rem;
+   height: 2.5rem;
+   background-color: rgba(150, 4, 200, 0.6);
+   border-radius: 50%;
+   text-align: center;
+}
+
+.btn2{
+   width: 2.5rem;
+   height: 2.5rem;
+   background-color: pink;
+   opacity: 60%;
+   border-radius: 60%;
+   text-align: center;
+   z-index: 1;
+   position: absolute;
+   left: 20%;
+}
+
+.menu{
+   width: 45px;
+   overflow: hidden;
+   padding: 2px;
+   overflow: none;
+}
+
+.bar{
+   width: 30px;
+   height: 3px;
+   background-color:  #1a2d5b;
+   margin-top: 10%;
+   border-radius: 2px;
+   position: relative;
+}
+
+.sma1{
+   width: 36px;
+}
+
+ .sma2{
+   width: 36px;
+}
+
+
+.sma3{
+   width: 20px;
+   left: 15px;
+}
+
+.monibox{
+   width: 100%;
+   margin-top: 8%;
+   border-radius: 15px;
+   padding: 6%;
+   background-image: linear-gradient(90deg, #0f1e3d, #1a2d5b);
+}
+
+.savbox{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding: 4% 0 0 3%;
+   gap:5%;
+}
+
+input{
+   background: transparent;
+   border: none;
+   outline: none;
+   color: var(--use3);
+}
+
+::-webkit-input-placeholder{
+   color: #1a2d6b;
+}
+
+#savings, #date{
+   width: 30%;
+   font-size: 13px;
+   color: white;
+
+}
+
+#amount{
+   font-size: 32px;
+   width: 80%;
+   margin-top: 20px;
+   color: white;
+}
+
+.downstar{
+   display: flex;
+   align-items: center;
+   margin-top: 15%;
+   justify-content: space-between;
+}
+
+.downdots{
+   display:flex;
+   color:white;
+   width: 80%;
+   gap: 3px;
+}
+
+
+#lastnum{
+   width: 30%;
+   color: white;
+}
+
+.done{
+   display: flex;
+   position: relative;
+   margin-right: 5%;
+
+}
+
+.circle1, .circle2{
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: white;
+}
+
+.circle2{
+  background-color: rgba(200,200,2550, 0.4);
+  position: absolute;
+  left: 40%;
+}
+
+
+/*-------- DOWN SECTION -----*/
+
+.color2{
+   background-color: white;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.guild2{
+  width: 100%;
+  padding: 0% 5% 5% 5%;
+}
+
+
+.status{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   background-color: white;
+   padding: 12px 15px;
+   border-radius: 10px;
+   transform: translateY(-25px);
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.trans, .sent{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: var(--use3);
+   font-weight: 500;
+   align-items: center;
+}
+
+.icon{
+   width: 40px;
+   height: 40px;
+   background-color: var(--use2);
+   border-radius: 50%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 80%;
+}
+
+.listbox{
+   width: 100%;
+   padding-right: 3%;
+}
+
+.lists{
+   display: flex;
+   justify-content: space-between;
+   padding-left: 3%;
+}
+
+.u{
+   width: 35px;
+   height: 35px;
+   background-color: var(--use2);
+   border-radius: 50%;
+   margin-top: 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 80%;
+}
+
+#name{
+   font-size: 17px;
+   width: 48%;
+   color: var(--use3);
+   font-weight: 600;
+}
+
+#listdate{
+   font-size: 10px;
+   font-weight: 600;
+   width: 34%;
+   text-align: right;
+}
+
+
+.amountbox{
+   display: flex;
+   justify-content: space-between;
+   transform: translateY(-15px);
+   padding-left: 3%;
+}
+
+.hidden{
+   width: 35px;
+   margin-right: 4%;
+}
+
+#fee{
+   width: 45%;
+   font-size: 13px;
+   font-weight: 600;
+}
+
+.camount{
+   width: 42%;
+   font-size: 16px;
+   font-weight: 600;
+   color: indianred;
+   text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+/*===================MENU BUTTON BOX MENU====≠============≈==*/
+
+.menubox{
+   position: absolute;
+   z-index: 10;
+   right: 0;
+   top: 0;
+   background-color: white;
+   padding: 5%  5% 0 5%;
+   height: 100vh;
+   width: 90%;
+   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+   overflow: hidden;
+   display: none;
+   animation: start 0.3s ease-out alternate;
+}
+
+@keyframes start {
+   from{
+      right: -100%;
+   }
+   
+   to{
+      right: 0;
+   }
+}
+
+.title{
+   text-align: center;
+   color: white;
+   padding: 18px 13px;
+   background-color: #1a2d5b;
+   border-radius: 5px;
+   margin: -12px -26px;
+}
+
+ul{
+   list-style-type: none;
+   margin-top: 15%;
+}
+
+
+li{
+   margin-top: 7%;
+   border: 2px solid #1a2d5b;
+   border-radius: 10px;
+   padding: 12px 19px;
+   text-decoration: none;
+   color: #1a2d5b;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.home{
+   
+}
+
+.web{
+   display: flex;
+   justify-content: space-between;
+}
+
+.webtn{
+   border: none;
+   background-color: #1a2d5b;
+   padding: 10px 16px;
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   border-radius: 5px;
+   margin-top: 30px;
+}
+
+.close{
+   border: none;
+   background-color: #1a2d5b;
+   padding: 0px 0;
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   border-radius: 5px;
+   width: 80px;
+   margin-top: 30px;
+}
+
+.at{
+   text-align: center;
+   font-size: 17px;
+   color: #1a2d5b ;
+   transform: translateY(260px);
+   font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/*=================== RECEIPT BUTTON OF THE WEBSITE ====≠============≈==*/
+
+.receipt{
+   position: absolute;
+   z-index: 100;
+   right: 0;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: white;
+   padding: 12px  6%;
+   height: 100vh;
+   width: 100%;
+   display: none;
+   overflow: hidden;
+   animation: start 0.1s ease-out alternate;
+}
+.good{
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   font-size: 5rem;
+   align-content: center;
+   object-fit: cover;
+   overflow: hidden;
+   text-align: center;
+}
+
+.goodimg{
+   transform: scale(1.1);
+}
+
+
+.p{
+   color: #1a2d6b;
+   text-align: center;
+}
+
+.payment{
+   font-size: 1.5rem;
+   width: 85%;
+   font-weight: 400;
+   margin-top: 15%;
+}
+
+.payamount{
+   font-size: 1.6rem;
+   width: 60%;
+   font-weight: 401;
+   margin-top: 10%;
+}
+
+.paydetail{
+   font-size:  1.3rem;
+   width: 60%;
+   margin-top: 10%;
+}
+
+.payname{
+   font-size: 1.6rem;
+   width: 85%;
+}
+
+.ref{
+   font-size: 1.5rem;
+   margin-top: 20%;
+   width: 70%;
+}
+
+.paydate{
+   margin-top: 10%;
+   width: 50%;
+}
+
+.ok{
+   background-color: #1a2d6b;
+   padding: 12px 20px;
+   width: 100%;
+   font-size: 1rem;
+   color: white;
+   border: none;
+   border-radius: 20px;
+   margin-top: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================  SENDING SECTION OF THE WEBSITE====≠============≈==*/
+
+.transferpage{
+   position: absolute;
+   z-index: 10;
+   right: 0;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+   animation: start 0.5s ease alternate;
+   display: none;
+}
+
+
+.s{
+   color:#1a2d6b; 
+   font-weight: 500;
+
+}
+
+
+.sendhead{
+   background-image: linear-gradient(50deg, #cbcdcc, #fefefe);;
+   padding: 10% 5% 1%;
+   width: 100%;
+}
+
+.senddetail{
+   font-size: 1.8rem;
+   width: 70%;
+   margin-top: 5%;
+}
+
+.sendname{
+   font-size: 15px;
+   margin-top: 2%;
+   width: 80%;
+   font-weight: 500;
+}
+
+.just{
+   display: flex;
+}
+
+.sendamount{
+   font-size: 1.9rem;
+   width: 80%;
+   text-align: center;
+   font-weight: 500;
+   align-self: center;
+}
+
+.sign{
+   font-size: 1.9rem;
+   width: 10%;
+   text-align: center;
+   font-weight: 500;
+   align-self: center; 
+   position: relative;
+   left: -20%;
+}
+
+.sendbody{
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   justify-content: center;
+   padding: 20% 8% 5% 8%;
+}
+
+.keys{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin-top: 10%;
+   gap:8%;
+   color: #1a2d6b;
+}   
+
+
+.sendkey{
+   background-color: #efefef;
+   padding: 10px 28px;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.clear{
+   background-color: white;
+   padding: 10px 28px;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.sendkey:hover{
+   background-color: #cfcfcf;
+}
+
+.clear:hover {
+   background-color: #f1f1f1;
+}
+
+.sendbtn {
+   background-color: #1a2d6b;
+   padding: 12px 20px;
+   width: 100%;
+   font-size: 1rem;
+   color: white;
+   border: none;
+   border-radius: 20px;
+   margin-top: 50%;
+}
+
+.sendbtn:hover{
+   opacity: 90%;
+}
